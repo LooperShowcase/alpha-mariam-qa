@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <title>MARYAM'S LIFE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://yt3.ggpht.com/ytc/AKedOLQu6qzMuJ5Pth6Wl0aT4bPEqY6vcSBX8o-PZhCK=s900-c-k-c0x00ffffff-no-rj"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+
+  <body>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="books.html">books</a></li>
+      <li><a href="violin.html">violin</a></li>
+    </ul>
+    <center>
+      <h1>
+        <u><b> Maryam kassim </b></u>
+      </h1>
+    </center>
+
+    <div id="aboutme">
+      <p>
+        Hi , my name is Maryam i am 13 years old ! I am in 7th grade <br />
+        I have tow brother,I am a sandwich girl between tow annoying brothers
+        <br />
+        I live in nazareth I like to read books and i play violin since i was 8
+        years old <br />
+        Sometimes i found my self spending hours checking out home decoration
+        pages out of the websites<br />
+        I cant live without cats i love them most ! I have a little cat and we
+        called it “soltana”<br />
+        My favorite class is computer lesson chemistry lesson and biology lesson
+        This is what you should know about me and now lets move on
+      </p>
+      <hr />
+    </div>
+    <br />
+    <marquee>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Violin_VL100.png/184px-Violin_VL100.png"
+        width="20%"
+      />
+      <img
+        src="https://images.theconversation.com/files/45159/original/rptgtpxd-1396254731.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=754&fit=clip"
+        width="25%"
+      />
+    </marquee>
+
+    <button type="button" onclick="darkmode()">
+      Set background color dark mode
+    </button>
+    <button type="button" onclick="lightmode()">
+      Set background color light mode
+    </button>
+
+    <script>
+      function darkmode() {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+        var tds = document.getElementsByTagName("td");
+        var ths = document.getElementsByTagName("th");
+        for (var i = 0, j = tds.length; i < j; ++i)
+          tds[i].style.color = "white";
+        for (var i = 0, j = ths.length; i < j; ++i)
+          ths[i].style.color = "white";
+      }
+
+      function lightmode() {
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+        document.table.style.color = "black";
+        var tds = document.getElementsByTagName("td");
+        var ths = document.getElementsByTagName("th");
+        for (var i = 0, j = tds.length; i < j; ++i)
+          tds[i].style.color = "black";
+        for (var i = 0, j = ths.length; i < j; ++i)
+          ths[i].style.color = "black";
+      }
+    </script>
+  </body>
+</html>
